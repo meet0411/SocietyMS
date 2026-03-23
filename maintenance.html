@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Maintenance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <header>
+        <img src="logo.jpg" alt="Logo" class="header-logo">
+        <h1>Society Maintenance Management System</h1>
+        <div class="user-info">
+            <span id="welcomeUser"></span>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#payments"><i>💰</i> Payments</a></li>
+            <li><a href="#maintenance"><i>🔧</i> Maintenance Requests</a></li>
+            <li><a href="#visitors"><i>👥</i> Visitors</a></li>
+            <li><a href="#notices"><i>📢</i> Notices</a></li>
+            <li><a href="#reports"><i>📊</i> Reports</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Residents</h3>
+                <div class="stat-number">245</div>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Payments</h3>
+                <div class="stat-number pending">18</div>
+            </div>
+            <div class="stat-card">
+                <h3>Open Requests</h3>
+                <div class="stat-number">5</div>
+            </div>
+            <div class="stat-card">
+                <h3>Monthly Collection</h3>
+                <div class="stat-number">₹2,45,000</div>
+            </div>
+        </div>
+
+        <div class="content-sections">
+            <section id="payments" class="section active">
+                <h2>Payment Status</h2>
+                <table>
+                    <thead>
+                        <tr><th>Flat No.</th><th>Resident</th><th>Amount</th><th>Status</th><th>Due Date</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A-101</td><td>Rahul Sharma</td><td>₹5,000</td><td class="paid">Paid</td><td>2026-01-15</td></tr>
+                        <tr><td>B-205</td><td>Priya Patel</td><td>₹5,000</td><td class="pending">Pending</td><td>2026-01-25</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="maintenance" class="section">
+                <h2>Maintenance Requests</h2>
+                <div class="request-list">
+                    <div class="request-card">
+                        <h4>Water Leak - Flat A-101</h4>
+                        <p>Reported by Rahul Sharma on Jan 25</p>
+                        <span class="status open">Open</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visitors" class="section">
+                <h2>Today's Visitors</h2>
+                <p>Coming soon...</p>
+            </section>
+
+            <section id="notices" class="section">
+                <h2>Announcements</h2>
+                <div class="notice-card">
+                    <h4>Water Supply Maintenance - Jan 28</h4>
+                    <p>Water supply will be off from 10AM-2PM</p>
+                </div>
+            </section>
+
+            <section id="reports" class="section">
+                <h2>Reports</h2>
+                <p>Generate monthly reports here...</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -33,6 +33,7 @@ button[type="submit"]:hover { transform: translateY(-2px); box-shadow: 0 10px 20
 .footer { text-align: center; padding: 20px 40px 40px !important; background: #f8f9fa; }
 .psw { color: #666; font-size: 14px; }
 .error { background: #ff4757; color: white; padding: 12px; border-radius: 8px; text-align: center; margin: 10px 0; }
+.success { background: #04AA6D; color: white; padding: 12px; border-radius: 8px; text-align: center; margin: 10px 0; }
 .close { position: absolute; right: 20px; top: 20px; font-size: 30px; color: #999; cursor: pointer; }
 
 /* DASHBOARD */
